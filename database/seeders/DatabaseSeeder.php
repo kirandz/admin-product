@@ -25,12 +25,12 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('admin'),
         ]);
 
-        User::factory(5)->create();
-        Customer::factory(5)->create();
-        Supplier::factory(5)->create();
-        Product::factory(20)->create();
-        Purchase::factory(20)->create();
-        Sale::factory(15)->create();
-        Sale::factory(5)->forToday()->create();
+        User::factory(2)->create();
+        Customer::factory(3)->create();
+        Supplier::factory(3)->create();
+        Product::factory(10)->create();
+        Purchase::factory(5)->create();
+        Sale::factory(3)->create();
+        Sale::factory(2)->forToday()->create();
     }
 }
