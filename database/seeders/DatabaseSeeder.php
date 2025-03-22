@@ -29,13 +29,8 @@ class DatabaseSeeder extends Seeder
         Customer::factory(5)->create();
         Supplier::factory(5)->create();
         Product::factory(20)->create();
-
-        sleep(2);
         Purchase::factory(20)->create();
-
-        sleep(2);
         Sale::factory(15)->create();
-
         Sale::factory(5)->forToday()->create();
     }
 }
