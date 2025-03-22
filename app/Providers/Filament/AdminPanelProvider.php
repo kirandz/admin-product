@@ -27,9 +27,7 @@ class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
-        if (config('app.env') != 'local') {
-            URL::forceScheme('https');
-        }
+        URL::forceScheme('https');
         return $panel
             ->default()
             ->id('admin')
